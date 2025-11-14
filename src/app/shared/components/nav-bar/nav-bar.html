@@ -1,1 +1,28 @@
-<p>nav-bar works!</p>
+<app-contact-info></app-contact-info>
+<nav class="navigation">
+
+  <div class="navigation__wrapper">
+
+    <div class="navigation__logo-and-name-container">
+      <img alt="Image of company logo"
+           class="navigation__logo"
+           height="64"
+           routerLink="/homepage"
+           src="logo-small.png"
+           width="64">
+      <p class="navigation__company-name">Comprodserv Unic SRL</p>
+    </div>
+
+    <ul class="navigation__unordered-list-container">
+      @for (navigation of navigationLinks(); track navigation.id) {
+        <li [class.selected-page]="currentUrl() === navigation.routerLink">
+          <a [routerLink]="navigation.routerLink" class="navigation__unordered-list-container--link">
+            {{ navigation.label }}
+          </a>
+        </li>
+      }
+    </ul>
+
+  </div>
+
+</nav>

@@ -1,0 +1,24 @@
+@use "../../../../assets/styles/colors";
+
+.contact-info-container {
+  &__info-text {
+    margin: 0;
+    padding: 8px;
+    background-color: colors.$primary-green-color;
+    color: colors.$white;
+    font-size: 14px;
+
+    &--mail {
+      color: colors.$white;
+    }
+  }
+}
+
+.spacer {
+  height: 8px;
+  background: linear-gradient(to right,
+    #9d6e23 0%,
+    #f3e099 50%,
+    #9d6e23 100%
+  );
+}

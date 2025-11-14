@@ -1,0 +1,58 @@
+@use "../../../assets/styles/colors";
+
+.homepage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__image-and-text-container {
+    width: 60%;
+    height: 551px;
+    background-image: url("../../../../public/heroimage.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  &__hero-container {
+    padding: 14px 20px;
+
+    &__header {
+      margin-bottom: 15px;
+      color: colors.$main-text-color;
+    }
+
+    &__links-container {
+      display: flex;
+      gap: 10px;
+
+      &--link {
+        text-decoration: underline;
+      }
+
+      &--spacer {
+        cursor: default;
+      }
+    }
+
+    &__button {
+      cursor: pointer;
+      transition: all .3s ease-in-out;
+      font-weight: 300;
+      color: colors.$white;
+      background-color: colors.$button-green-primary-color;
+      border: none;
+      border-radius: 5px;
+      padding: 16px;
+      font-size: 16px;
+      margin-bottom: 110px;
+      margin-top: 10px;
+
+      &:hover {
+        background-color: colors.$button-green-primary-color-darker;
+        margin-left: 3px;
+      }
+    }
+  }
+}

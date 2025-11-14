@@ -1,0 +1,55 @@
+@use "../../../../assets/styles/colors";
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  background-color: colors.$white;
+  color: colors.$main-text-color;
+
+  &__logo {
+    cursor: pointer;
+  }
+
+  &__wrapper {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+  }
+
+  &__logo-and-name-container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__unordered-list-container {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    &--link {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        width: 0;
+        transition: width 0.3s ease;
+        background-color: #815d2e;
+        border-radius: 5px;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.selected-page {
+  transition: color .2s ease-in-out;
+  color: #cba26e;
+}
