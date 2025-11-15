@@ -26,6 +26,9 @@ export class NavBar implements OnInit {
   ngOnInit() {
     this._router.events
       .pipe(filter(event => event instanceof NavigationEnd))
-      .subscribe((event: NavigationEnd) => this.currentUrl.set(event.url))
+      .subscribe((event: NavigationEnd) => {
+        console.log(event)
+        this.currentUrl.set(event.urlAfterRedirects)
+      })
   }
 }
