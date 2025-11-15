@@ -10,6 +10,7 @@ body {
 p, h1, h2, h3, h4, h5, h6 {
   cursor: default;
   margin: 0;
+  white-space: nowrap;
 }
 
 a, ul {
@@ -17,4 +18,5 @@ a, ul {
   text-decoration: none;
   list-style: none;
   color: inherit;
+  white-space: nowrap;
 }

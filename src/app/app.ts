@@ -6,7 +6,8 @@ import {NavBar} from './shared/components/nav-bar/nav-bar';
   selector: 'app-root',
   imports: [RouterOutlet, NavBar],
   templateUrl: './app.html',
-  styleUrl: './app.scss'
+  styleUrl: './app.scss',
+  standalone: true
 })
 export class App {
 }

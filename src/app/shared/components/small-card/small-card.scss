@@ -1,0 +1,46 @@
+@use "../../../../assets/styles/colors";
+
+.card-container {
+  padding: 10px 10px 25px 10px;
+  border: 2px solid colors.$card-color-border;
+  border-radius: 10px;
+  width: 250px;
+  height: 292px;
+
+  &__icon-container {
+    width: 100%;
+    text-align: center;
+    font-size: 64px;
+    color: colors.$cards-icon-color;
+  }
+
+  &__header {
+    font-size: 18px;
+    color: colors.$secondary-header-color;
+    margin-bottom: 15px;
+  }
+
+  &__main-paragraph {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  &__small-footnote {
+    font-size: 13px;
+  }
+
+  &, &__header, &__main-paragraph, &__small-footnote {
+    cursor: pointer;
+    white-space: wrap;
+  }
+}
+
+.selected-card {
+  transition: all .2s ease-in-out;
+  border: 2px solid colors.$card-selected-color-border;
+}
+
+.ri-thin {
+  -webkit-text-stroke: 0.5px colors.$cards-icon-color;
+  color: transparent;
+}

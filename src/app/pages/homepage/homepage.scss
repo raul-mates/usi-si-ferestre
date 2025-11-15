@@ -1,18 +1,38 @@
 @use "../../../assets/styles/colors";
 
 .homepage {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
   &__image-and-text-container {
+    justify-self: center;
     width: 60%;
     height: 551px;
     background-image: url("../../../../public/heroimage.jpg");
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+  }
+
+  &__cards {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 25px;
+  }
+
+  &__cards-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__header-cards-container {
+    width: 60%;
+  }
+
+  &__cards-header {
+    margin-bottom: 20px;
+    color: colors.$secondary-header-color;
   }
 
   &__hero-container {
@@ -37,9 +57,10 @@
     }
 
     &__button {
+      font-family: 'Poppins', sans-serif;
       cursor: pointer;
-      transition: all .3s ease-in-out;
-      font-weight: 300;
+      transition: all .2s ease-in-out;
+      font-weight: 400;
       color: colors.$white;
       background-color: colors.$button-green-primary-color;
       border: none;
