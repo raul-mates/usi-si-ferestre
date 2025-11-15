@@ -6,7 +6,7 @@
     width: 60%;
     height: 551px;
     background-image: url("../../../../public/heroimage.jpg");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
@@ -23,7 +23,9 @@
 
   &__cards-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
   }
 
   &__header-cards-container {
