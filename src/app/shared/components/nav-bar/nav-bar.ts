@@ -1,6 +1,5 @@
 import {Component, inject, OnInit, signal} from '@angular/core';
 import {NavigationEnd, Router, RouterLink} from '@angular/router';
-import {ContactInfoBar} from '../contact-info/contact-info-bar';
 import {INavigationButton} from './nav-bar.model';
 import {filter} from 'rxjs';
 
@@ -8,7 +7,6 @@ import {filter} from 'rxjs';
   selector: 'app-nav-bar',
   imports: [
     RouterLink,
-    ContactInfoBar,
   ],
   templateUrl: './nav-bar.html',
   styleUrl: './nav-bar.scss',
