@@ -55,6 +55,10 @@
   &__cards-header {
     margin-bottom: 20px;
     color: colors.$secondary-header-color;
+
+    @media only screen and (max-width: 408px) {
+      white-space: wrap;
+    }
   }
 
   &__hero-container {
@@ -66,12 +70,20 @@
       @media only screen and (max-width: 640px) {
         width: 425px;
       }
+
+      @media only screen and (max-width: 451px) {
+        width: auto;
+      }
     }
-    
+
 
     &__header {
       margin-bottom: 15px;
       color: colors.$main-text-color;
+
+      @media only screen and (max-width: 461px) {
+        white-space: wrap;
+      }
     }
 
     &__links-container {
@@ -100,6 +112,10 @@
       font-size: 16px;
       margin-bottom: 110px;
       margin-top: 10px;
+
+      @media only screen and (max-width: 425px) {
+        margin-bottom: 55px;
+      }
 
       &:hover {
         background-color: colors.$button-green-primary-color-darker;

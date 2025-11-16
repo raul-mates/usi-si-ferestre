@@ -8,13 +8,15 @@
   padding: 8px;
   gap: 10px;
 
-  &__info-text {
-    margin: 0;
-    padding: 8px;
-    color: colors.$white;
+  @media only screen and (max-width: 604px) {
+    &__email {
+      display: none;
+    }
+  }
 
-    &--mail {
-      color: colors.$white;
+  @media only screen and (max-width: 320px) {
+    &__whatsapp {
+      display: none;
     }
   }
 }
