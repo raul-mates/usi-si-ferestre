@@ -1,12 +1,17 @@
 @use "../../../../assets/styles/colors";
 
 .contact-info-container {
+  display: flex;
+  background-color: colors.$primary-green-color;
+  color: colors.$white;
+  font-size: 14px;
+  padding: 8px;
+  gap: 10px;
+
   &__info-text {
     margin: 0;
     padding: 8px;
-    background-color: colors.$primary-green-color;
     color: colors.$white;
-    font-size: 14px;
 
     &--mail {
       color: colors.$white;

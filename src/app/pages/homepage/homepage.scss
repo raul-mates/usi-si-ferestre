@@ -60,6 +60,15 @@
   &__hero-container {
     padding: 14px 20px;
 
+    &__text {
+      width: 520px;
+      white-space: wrap;
+      @media only screen and (max-width: 640px) {
+        width: 425px;
+      }
+    }
+    
+
     &__header {
       margin-bottom: 15px;
       color: colors.$main-text-color;

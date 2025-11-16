@@ -6,6 +6,7 @@
   position: sticky;
   background-color: colors.$white;
   color: colors.$main-text-color;
+  height: 64px;
 
   &__logo {
     cursor: pointer;
@@ -22,6 +23,10 @@
 
     @media only screen and (max-width: 1024px) {
       width: 98%;
+    }
+
+    @media only screen and (max-width: 646px) {
+      display: none;
     }
   }
 

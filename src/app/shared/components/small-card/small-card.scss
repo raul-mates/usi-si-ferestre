@@ -7,6 +7,10 @@
   width: 250px;
   height: 292px;
 
+  @media only screen and (max-width: 370px) {
+    width: auto;
+  }
+
   &__icon-container {
     width: 100%;
     text-align: center;
