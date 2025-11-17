@@ -50,16 +50,17 @@
       &::after {
         content: "";
         position: absolute;
-        left: 0;
+        right: 0;
+        width: 0;
         bottom: 0;
         height: 2px;
-        width: 0;
         transition: width 0.3s ease;
         background-color: #815d2e;
         border-radius: 5px;
       }
 
       &:hover::after {
+        left: 0;
         width: 100%;
       }
     }

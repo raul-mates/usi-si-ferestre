@@ -1,5 +1,69 @@
 @use "../../../../assets/styles/colors";
 
 .footer {
+  display: flex;
+  justify-content: center;
   background-color: colors.$primary-green-color;
+  color: colors.$white;
+
+  &__sections-wrapper {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media only screen and (max-width: 1440px) {
+      width: 80%;
+    }
+
+    @media only screen and (max-width: 1024px) {
+      width: 93%;
+    }
+  }
+
+  &__left-container {
+    padding: 25px 0 15px 0;
+
+    &__company-name {
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+    &__company-info {
+      display: flex;
+      color: colors.$white;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 15px;
+    }
+
+    &__unordered-list {
+      font-weight: 400;
+      font-size: 13px;
+      padding-left: 59px;
+
+      & li {
+        display: flex;
+        padding-bottom: 15px;
+        gap: 5px;
+
+        & a {
+          white-space: wrap;
+        }
+      }
+    }
+  }
+
+  &__right-container {
+    padding: 25px 0 15px 0;
+
+    &__copyright-developer {
+      font-size: 13px;
+
+      & p {
+        display: block;
+        white-space: wrap;
+      }
+    }
+  }
 }
