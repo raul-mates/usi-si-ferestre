@@ -13,21 +13,27 @@
         <li>
           <p>Adresa: </p>
           <a
+            class="footer-link"
             href="https://www.google.com/maps/dir/?api=1&destination=Magazin+Uși+și+Ferestre,+Bloc+40,+Str.+Mihai+Viteazu+40,+Deva+330058,+Romania"
-            style="text-decoration: underline"
-            target="_blank">Deva, Hunedoara, Str. Mihai Viteazu, Bloc 40, Parter
+            target="_blank">Deva, Hunedoara, Str. Mihai Viteazu, Bloc 40, Parter <i class="ri-map-pin-2-fill"></i>
           </a>
         </li>
         <li>
-          <p>E-mail: </p><a class="contact-info-container__email" style="text-decoration: underline" href="mailto:info@usisiferestre.ro">info@usisiferestre.ro</a>
+          <p>E-mail: </p><a class="contact-info-container__email footer-link" href="mailto:info@usisiferestre.ro">info@usisiferestre.ro</a>
         </li>
         <li><p>Program: </p>L–V 09:00–17:00</li>
       </ul>
     </section>
     <section class="footer__right-container">
+      <ul class="footer__right-container__unordered-list">
+        <li class="footer__right-container__list-item"><a class="footer-link" routerLink="/homepage">Acasa</a></li>
+        <li class="footer__right-container__list-item"><a class="footer-link" routerLink="/about-us">Despre noi</a></li>
+        <li class="footer__right-container__list-item"><a class="footer-link" routerLink="/products">Produse</a></li>
+        <li class="footer__right-container__list-item"><a class="footer-link" routerLink="/contact">Contact</a></li>
+      </ul>
       <div class="footer__right-container__copyright-developer">
         <p>&copy; {{ currentYear() }} S.C. COMPRODSERV UNIC S.R.L. Toate drepturile rezervate.</p>
-        <p>Website realizat de Mates Raul Alexandru.</p>
+        <p>Website realizat de <a href="https://www.linkedin.com/in/raul-mates-563b83194/" class="footer-link">Mates Raul Alexandru.<i class="ri-linkedin-box-fill"></i></a></p>
       </div>
     </section>
   </div>
