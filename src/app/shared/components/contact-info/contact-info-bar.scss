@@ -4,9 +4,9 @@
   display: flex;
   background-color: colors.$primary-green-color;
   color: colors.$white;
-  font-size: 14px;
-  padding: 8px;
-  gap: 15px;
+  font-size: 1.4rem;
+  padding: 0.8rem;
+  gap: 1.5rem;
 
   @media only screen and (max-width: 604px) {
     &__email {

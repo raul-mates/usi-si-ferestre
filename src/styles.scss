@@ -1,3 +1,11 @@
+html {
+  font-size: 62.5%;
+
+  @media only screen and (max-width: 1024px) {
+    font-size: 56.25%;
+  }
+}
+
 body {
   box-sizing: border-box;
   padding: 0;
@@ -22,7 +30,7 @@ a, ul {
 }
 
 .spacer {
-  height: 8px;
+  height: 0.8rem;
   background: linear-gradient(to right,
     #9d6e23 0%,
     #f3e099 50%,
@@ -32,4 +40,11 @@ a, ul {
 
 .link {
   text-decoration: underline;
+}
+
+
+.sticky-nav-bar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }

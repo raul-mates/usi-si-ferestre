@@ -8,7 +8,7 @@
   &__image-and-text-container {
     justify-self: center;
     width: 60%;
-    height: 551px;
+    height: 55.1rem;
     background-image: url("../../../../public/heroimage.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -29,15 +29,15 @@
     display: flex;
     width: 100%;
     justify-content: center;
-    margin-top: 40px;
-    margin-bottom: 60px;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
   }
 
   &__cards-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 1.5rem;
   }
 
   &__header-cards-container {
@@ -57,7 +57,7 @@
   }
 
   &__cards-header {
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
     color: colors.$secondary-header-color;
 
     @media only screen and (max-width: 408px) {
@@ -68,17 +68,22 @@
   &__hero-container {
     display: flex;
     flex-direction: column;
-    padding: 14px 20px;
+    padding: 1.4rem 2rem;
 
     & * {
       width: fit-content;
     }
 
+    &__header {
+      font-size: 3.2rem;
+    }
+
     &__text {
-      width: 520px !important;
+      width: 52.2rem !important;
       white-space: wrap;
+      font-size: 1.6rem;
       @media only screen and (max-width: 640px) {
-        width: 425px !important;
+        width: 42.5rem !important;
       }
 
       @media only screen and (max-width: 451px) {
@@ -88,7 +93,7 @@
 
 
     &__header {
-      margin-bottom: 15px;
+      margin-bottom: 1.5rem;
       color: colors.$main-text-color;
 
       @media only screen and (max-width: 461px) {
@@ -97,8 +102,9 @@
     }
 
     &__links-container {
+      font-size: 1.6rem;
       display: flex;
-      gap: 10px;
+      gap: 1rem;
 
       &--link {
         text-decoration: underline;
@@ -117,19 +123,19 @@
       color: colors.$white;
       background-color: colors.$button-green-primary-color;
       border: none;
-      border-radius: 5px;
-      padding: 16px;
-      font-size: 16px;
-      margin-bottom: 110px;
-      margin-top: 10px;
+      border-radius: 0.5rem;
+      padding: 1.6rem;
+      font-size: 1.6rem;
+      margin-bottom: 11rem;
+      margin-top: 1rem;
 
-      @media only screen and (max-width: 442px) {
-        margin-bottom: 55px;
+      @media only screen and (max-width: 397px) {
+        margin-bottom: 5.5rem;
       }
 
       &:hover {
         background-color: colors.$button-green-primary-color-darker;
-        margin-left: 3px;
+        margin-left: 0.3rem;
       }
     }
   }

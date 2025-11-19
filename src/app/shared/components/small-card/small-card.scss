@@ -1,11 +1,11 @@
 @use "../../../../assets/styles/colors";
 
 .card-container {
-  padding: 10px 10px 25px 10px;
-  border: 2px solid colors.$card-color-border;
-  border-radius: 10px;
-  width: 250px;
-  height: 292px;
+  padding: 1rem 1rem 2.5rem 1rem;
+  border: 0.2rem solid colors.$card-color-border;
+  border-radius: 1rem;
+  width: 25rem;
+  height: 29.2rem;
 
   @media only screen and (max-width: 370px) {
     width: auto;
@@ -14,23 +14,23 @@
   &__icon-container {
     width: 100%;
     text-align: center;
-    font-size: 64px;
+    font-size: 6.4rem;
     color: colors.$cards-icon-color;
   }
 
   &__header {
-    font-size: 18px;
+    font-size: 1.8rem;
     color: colors.$secondary-header-color;
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
   }
 
   &__main-paragraph {
-    font-size: 16px;
-    margin-bottom: 15px;
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
   }
 
   &__small-footnote {
-    font-size: 13px;
+    font-size: 1.3rem;
   }
 
   &, &__header, &__main-paragraph, &__small-footnote {
@@ -41,10 +41,10 @@
 
 .selected-card {
   transition: all .2s ease-in-out;
-  border: 2px solid colors.$card-selected-color-border;
+  border: 0.2rem solid colors.$card-selected-color-border;
 }
 
 .ri-thin {
-  -webkit-text-stroke: 0.5px colors.$cards-icon-color;
+  -webkit-text-stroke: 0.05rem colors.$cards-icon-color;
   color: transparent;
 }
