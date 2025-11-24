@@ -10,6 +10,7 @@
 
   @media only screen and (max-width: 646px) {
     height: 4.2rem;
+    justify-content: flex-end;
   }
 
   &__company-name {
@@ -68,6 +69,13 @@
         left: 0;
         width: 100%;
       }
+    }
+  }
+
+  &__burger {
+    display: none;
+    @media only screen and (max-width: 646px) {
+      display: block;
     }
   }
 }

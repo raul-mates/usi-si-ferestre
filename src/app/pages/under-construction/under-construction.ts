@@ -1,5 +1,5 @@
-import {Component} from '@angular/core';
-import {RouterLink} from '@angular/router';
+import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-under-construction',
@@ -7,7 +7,7 @@ import {RouterLink} from '@angular/router';
     RouterLink
   ],
   templateUrl: './under-construction.html',
-  styleUrl: './under-construction.scss',
+  styleUrl: './under-construction.scss'
 })
 export class UnderConstruction {
 
