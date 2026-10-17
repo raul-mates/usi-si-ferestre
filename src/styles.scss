@@ -1,4 +1,5 @@
-@use "tailwindcss";
+@use "tailwind.css";
+@import "primeicons/primeicons.css";
 
 html {
   font-size: 62.5%;
@@ -20,15 +21,14 @@ body {
 p, h1, h2, h3, h4, h5, h6 {
   cursor: default;
   margin: 0;
-  white-space: nowrap;
+  //white-space: nowrap;
 }
 
 a, ul {
-  margin: 0;
   text-decoration: none;
   list-style: none;
   color: inherit;
-  white-space: nowrap;
+  //white-space: nowrap;
 }
 
 .spacer {

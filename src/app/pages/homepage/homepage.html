@@ -1,11 +1,11 @@
 <main (click)="deselectEventDelegation($event)" class="homepage">
   <section class="homepage__image-and-text-container">
     <div class="homepage__hero-container">
-      <h1 class="homepage__hero-container__header">Usi si ferestre de calitate<br>superioara pentru casa ta</h1>
-      <p class="homepage__hero-container__text">Transforma spatiile din casa ta in locuri comfortabile si sigure, afla
-        mai multe despre ofertele noastre</p>
+      <h1 class="homepage__hero-container__header">Detaliile care definesc un spațiu.</h1>
+      <p class="homepage__hero-container__text">Soluții din PVC și aluminiu, uși și sisteme de închidere create pentru
+        confort, siguranță și durabilitate.</p>
       <input class="homepage__hero-container__button" routerLink="/products" type="button"
-             value="Descopera serviciile noastre">
+             value="Descoperă produsele">
       <div class="homepage__hero-container__links-container">
         <p class="homepage__hero-container__links-container--link" routerLink="">experienta</p>
         <p class="homepage__hero-container__links-container--spacer">|</p>
@@ -14,21 +14,402 @@
     </div>
   </section>
 
-  <!--  <section class="homepage__cards">-->
-  <!--    <div class="homepage__header-cards-container">-->
-  <!--      <h2 class="homepage__cards-header">Solutii complete pentru casa ta</h2>-->
-  <!--      <div class="homepage__cards-container">-->
-  <!--        @for (card of infoCards(); track card.id; let index = $index) {-->
-  <!--          <app-small-card (onSelectedCard)="onSelectedCard($event)"-->
-  <!--                          [cardId]="card.id"-->
-  <!--                          [header]="card.header"-->
-  <!--                          [iconName]="card.iconName"-->
-  <!--                          [mainParagraph]="card.mainParagraph"-->
-  <!--                          [selectedCard]="selectedCard()"-->
-  <!--                          [smallFootnote]="card.smallFootnote">-->
-  <!--          </app-small-card>-->
-  <!--        }-->
-  <!--      </div>-->
-  <!--    </div>-->
-  <!--  </section>-->
+  <section class="relative w-full overflow-hidden flex justify-center">
+    <div class="w-[60%] px-5 py-20 sm:px-8 sm:py-24 lg:px-12 xl:px-16 2xl:px-20 padding-custom">
+
+      <!-- Section heading -->
+      <div class="mb-12 flex items-end justify-between gap-6 sm:mb-16">
+        <div>
+        <span
+          class="text-sm font-semibold uppercase tracking-[0.22em] text-[#8a7555]"
+        >
+          De ce să ne alegi
+        </span>
+
+          <h2
+            class="mt-4 max-w-3xl text-4xl font-medium tracking-tight text-neutral-900 sm:text-5xl lg:text-6xl"
+          >
+            Calitate în fiecare detaliu.
+          </h2>
+        </div>
+      </div>
+
+      <!-- Trust items -->
+      <div class="grid w-full grid-cols-1 gap-x-8 sm:grid-cols-2 lg:grid-cols-4">
+
+        <article class="group border-t border-neutral-300 py-8 lg:border-t-0 lg:py-0 lg:pr-6">
+          <div
+            class="mb-7 flex h-14 w-14 items-center justify-center rounded-xl bg-white text-[#8a7555] ring-1 ring-neutral-200/80 transition-colors duration-300 group-hover:bg-neutral-900 group-hover:text-white"
+          >
+            <i class="pi pi-history !text-[14px]"></i>
+          </div>
+
+          <h3 class="text-xl font-medium tracking-tight text-neutral-900 xl:text-2xl">
+            Experiență dovedită
+          </h3>
+
+          <p class="mt-4 text-base leading-7 text-neutral-600">
+            Peste 25 de ani de experiență în soluții pentru ferestre și uși.
+          </p>
+        </article>
+
+        <article class="group border-t border-neutral-300 py-8 lg:border-t-0 lg:border-l lg:py-0 lg:pl-8 lg:pr-6">
+          <div
+            class="mb-7 flex h-14 w-14 items-center justify-center rounded-xl bg-white text-[#8a7555] ring-1 ring-neutral-200/80 transition-colors duration-300 group-hover:bg-neutral-900 group-hover:text-white"
+          >
+            <i class="pi pi-sliders-h !text-[14px]"></i>
+          </div>
+
+          <h3 class="text-xl font-medium tracking-tight text-neutral-900 xl:text-2xl">
+            Soluții personalizate
+          </h3>
+
+          <p class="mt-4 text-base leading-7 text-neutral-600">
+            Configurații adaptate cerințelor fiecărui proiect.
+          </p>
+        </article>
+
+        <article class="group border-t border-neutral-300 py-8 lg:border-t-0 lg:border-l lg:py-0 lg:pl-8 lg:pr-6">
+          <div
+            class="mb-7 flex h-14 w-14 items-center justify-center rounded-xl bg-white text-[#8a7555] ring-1 ring-neutral-200/80 transition-colors duration-300 group-hover:bg-neutral-900 group-hover:text-white"
+          >
+            <i class="pi pi-wrench !text-[14px]"></i>
+          </div>
+
+          <h3 class="text-xl font-medium tracking-tight text-neutral-900 xl:text-2xl">
+            Măsurători și montaj
+          </h3>
+
+          <p class="mt-4 text-base leading-7 text-neutral-600">
+            Servicii realizate de echipa proprie.
+          </p>
+        </article>
+
+        <article class="group border-t border-neutral-300 py-8 lg:border-t-0 lg:border-l lg:py-0 lg:pl-8">
+          <div
+            class="mb-7 flex h-14 w-14 items-center justify-center rounded-xl bg-white text-[#8a7555] ring-1 ring-neutral-200/80 transition-colors duration-300 group-hover:bg-neutral-900 group-hover:text-white"
+          >
+            <i class="pi pi-shield !text-[14px]"></i>
+          </div>
+
+          <h3 class="text-xl font-medium tracking-tight text-neutral-900 xl:text-2xl">
+            Suport după montaj
+          </h3>
+
+          <p class="mt-4 text-base leading-7 text-neutral-600">
+            Service și asistență după finalizarea lucrării.
+          </p>
+        </article>
+
+      </div>
+
+      <!-- CTA -->
+      <div
+        class="mt-16 flex flex-col gap-6 border-t border-neutral-300 pt-8 sm:mt-20 sm:flex-row sm:items-center sm:justify-between"
+      >
+        <div>
+          <p class="text-xl font-medium text-neutral-900 sm:text-2xl">
+            Ai un proiect în plan?
+          </p>
+
+          <p class="mt-2 text-base leading-7 text-neutral-600">
+            Hai să discutăm despre soluția potrivită.
+          </p>
+        </div>
+
+        <a
+          class="inline-flex min-h-14 items-center justify-center gap-3 self-start rounded-lg bg-neutral-900 px-8 py-4 text-base font-medium text-white transition-colors duration-200 hover:bg-[#8a7555] hover-custom focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-900 sm:self-auto"
+          href="tel:+40757131273"
+        >
+          Cere o ofertă
+          <i class="pi pi-arrow-right text-lg"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="relative w-full overflow-hidden bg-[#f6f6f6]">
+    <div class="mx-auto w-[60%] px-5 py-20 sm:px-8 sm:py-24 lg:px-12 xl:px-16 2xl:px-20 padding-custom">
+
+      <!-- Section heading -->
+      <div class="mb-10 flex flex-col gap-5 sm:mb-14 sm:flex-row sm:items-end sm:justify-between">
+        <div>
+        <span class="text-sm font-semibold uppercase tracking-[0.22em] text-[#8a7555]">
+          Gama noastră
+        </span>
+
+          <h2 class="mt-4 max-w-2xl text-4xl font-medium tracking-tight text-[#1e1d1e] sm:text-5xl lg:text-6xl">
+            Soluții potrivite pentru fiecare spațiu.
+          </h2>
+
+          <p class="mt-5 max-w-xl text-base leading-7 text-[#898a8a] sm:text-lg">
+            De la ferestre și uși moderne până la sisteme de închidere,
+            găsești soluții adaptate proiectului tău.
+          </p>
+        </div>
+
+        <a
+          class="group inline-flex shrink-0 items-center gap-3 self-start text-base font-semibold text-[#628b6b] transition-colors duration-200 hover:text-[#16731f] sm:self-auto"
+          routerLink="/products"
+        >
+          Vezi toate produsele
+          <i
+            class="pi pi-arrow-up-right text-lg transition-transform duration-200 group-hover:translate-x-1 group-hover:-translate-y-1"></i>
+        </a>
+      </div>
+
+      <!-- Product categories -->
+      <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-4">
+
+        <!-- PVC -->
+        <a
+          class="group relative isolate flex min-h-[360px] overflow-hidden rounded-2xl bg-[#e8e8e8] sm:min-h-[420px]"
+          routerLink="/products"
+        >
+          <img
+            alt="Ferestre și uși din PVC"
+            class="absolute inset-0 -z-20 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+            loading="lazy"
+            src="/tamplarie-pvc-1.jpg"
+          />
+
+          <div class="absolute inset-0 -z-10 bg-gradient-to-t from-black/80 via-black/15 to-transparent"></div>
+
+          <div class="mt-auto w-full p-6 sm:p-7">
+          <span class="text-xs font-semibold uppercase tracking-[0.2em] text-white/75">
+            01 / Eficiență
+          </span>
+
+            <div class="mt-3 flex items-end justify-between gap-3">
+              <h3 class="text-2xl font-medium tracking-tight text-white sm:text-3xl">
+                Tâmplărie PVC
+              </h3>
+
+              <span
+                class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-white/50 text-white transition-colors duration-300 group-hover:border-[#628b6b] group-hover:bg-[#628b6b]">
+              <i class="pi pi-arrow-up-right text-lg"></i>
+            </span>
+            </div>
+
+            <p class="mt-3 max-w-xs text-sm leading-6 text-white/80">
+              Confort termic, izolare și funcționalitate pentru locuința ta.
+            </p>
+          </div>
+        </a>
+
+        <!-- Aluminium -->
+        <a
+          class="group relative isolate flex min-h-[360px] overflow-hidden rounded-2xl bg-[#e8e8e8] sm:min-h-[420px]"
+          routerLink="/products"
+        >
+          <img
+            alt="Ferestre moderne cu profile din aluminiu"
+            class="absolute inset-0 -z-20 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+            loading="lazy"
+            src="/tamplarie-aluminium-2.jpg"
+          />
+
+          <div class="absolute inset-0 -z-10 bg-gradient-to-t from-black/80 via-black/15 to-transparent"></div>
+
+          <div class="mt-auto w-full p-6 sm:p-7">
+          <span class="text-xs font-semibold uppercase tracking-[0.2em] text-white/75">
+            02 / Design
+          </span>
+
+            <div class="mt-3 flex items-end justify-between gap-3">
+              <h3 class="text-2xl font-medium tracking-tight text-white sm:text-3xl">
+                Tâmplărie aluminiu
+              </h3>
+
+              <span
+                class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-white/50 text-white transition-colors duration-300 group-hover:border-[#628b6b] group-hover:bg-[#628b6b]">
+              <i class="pi pi-arrow-up-right text-lg"></i>
+            </span>
+            </div>
+
+            <p class="mt-3 max-w-xs text-sm leading-6 text-white/80" style="white-space: normal">
+              Profile elegante și suprafețe vitrate pentru arhitectură modernă.
+            </p>
+          </div>
+        </a>
+
+        <!-- Doors -->
+        <a
+          class="group relative isolate flex min-h-[360px] overflow-hidden rounded-2xl bg-[#e8e8e8] sm:min-h-[420px]"
+          routerLink="/products"
+        >
+          <img
+            alt="Uși de garaj și sisteme de închidere"
+            class="absolute inset-0 -z-20 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+            loading="lazy"
+            src="/usi-si-porti-3.jpg"
+          />
+
+          <div class="absolute inset-0 -z-10 bg-gradient-to-t from-black/80 via-black/15 to-transparent"></div>
+
+          <div class="mt-auto w-full p-6 sm:p-7">
+          <span class="text-xs font-semibold uppercase tracking-[0.2em] text-white/75">
+            03 / Siguranță
+          </span>
+
+            <div class="mt-3 flex items-end justify-between gap-3">
+              <h3 class="text-2xl font-medium tracking-tight text-white sm:text-3xl">
+                Uși și porți
+              </h3>
+
+              <span
+                class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-white/50 text-white transition-colors duration-300 group-hover:border-[#628b6b] group-hover:bg-[#628b6b]">
+              <i class="pi pi-arrow-up-right text-lg"></i>
+            </span>
+            </div>
+
+            <p class="mt-3 max-w-xs text-sm leading-6 text-white/80">
+              Sisteme pentru acces rezidențial, comercial și industrial.
+            </p>
+          </div>
+        </a>
+
+        <!-- Roller shutters -->
+        <a
+          class="group relative isolate flex min-h-[360px] overflow-hidden rounded-2xl bg-[#e8e8e8] sm:min-h-[420px]"
+          routerLink="/products"
+        >
+          <img
+            alt="Rulouri exterioare pentru ferestre"
+            class="absolute inset-0 -z-20 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+            loading="lazy"
+            src="/rulouri-si-protectie-solara-04.jpg"
+          />
+
+          <div class="absolute inset-0 -z-10 bg-gradient-to-t from-black/80 via-black/15 to-transparent"></div>
+
+          <div class="mt-auto w-full p-6 sm:p-7">
+          <span class="text-xs font-semibold uppercase tracking-[0.2em] text-white/75">
+            04 / Confort
+          </span>
+
+            <div class="mt-3 flex items-end justify-between gap-3">
+              <h3 class="text-2xl font-medium tracking-tight text-white sm:text-3xl">
+                Rulouri exterioare
+              </h3>
+
+              <span
+                class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-white/50 text-white transition-colors duration-300 group-hover:border-[#628b6b] group-hover:bg-[#628b6b]">
+              <i class="pi pi-arrow-up-right text-lg"></i>
+            </span>
+            </div>
+
+            <p class="mt-3 max-w-xs text-sm leading-6 text-white/80">
+              Intimitate, controlul luminii și protecție suplimentară.
+            </p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="relative w-full overflow-hidden bg-white">
+    <div
+      class="mx-auto grid w-[60%] max-w-[1600px] grid-cols-1 padding-custom items-center gap-10 px-5 py-20 sm:px-8 sm:py-24 lg:grid-cols-2 lg:gap-16 lg:px-12 xl:px-20">
+
+      <!-- Image -->
+      <div
+        class="group relative min-h-[360px] overflow-hidden rounded-2xl bg-[#e8e8e8] sm:min-h-[480px] lg:min-h-[600px]">
+        <img
+          alt="Montaj profesional de ferestre și uși"
+          class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+          loading="lazy"
+          src="/poza-cta.jpg"
+        />
+
+        <div class="absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-transparent"></div>
+
+        <div
+          class="absolute bottom-5 left-5 right-5 rounded-xl border border-white/20 bg-white/90 p-5 backdrop-blur-md sm:bottom-7 sm:left-7 sm:right-7 sm:p-6">
+          <p class="text-xs font-semibold uppercase tracking-[0.2em] text-[#628b6b]">
+            De la măsurătoare la rezultat
+          </p>
+          <p class="mt-2 text-xl font-medium tracking-tight text-[#1e1d1e] sm:text-2xl">
+            Fiecare detaliu contează.
+          </p>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="lg:py-10">
+      <span class="text-sm font-semibold uppercase tracking-[0.22em] text-[#628b6b]">
+        Servicii complete
+      </span>
+
+        <h2 class="mt-4 text-4xl font-medium leading-tight tracking-tight text-[#1e1d1e] sm:text-5xl lg:text-6xl"
+            style="white-space: normal">
+          Un proiect reușit începe cu alegerea potrivită.
+        </h2>
+
+        <p class="mt-6 text-base leading-8 text-[#898a8a] sm:text-lg" style="white-space: normal">
+          Alegerea tâmplăriei potrivite înseamnă mai mult decât aspect.
+          Contează măsurătorile corecte, soluția tehnică și atenția acordată
+          fiecărei etape.
+        </p>
+
+        <!-- Service points -->
+        <div class="mt-9 space-y-6">
+
+          <div class="flex items-start gap-4">
+          <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#f6f6f6] text-[#628b6b]">
+            <i class="pi pi-check-circle !text-[14px]"></i>
+          </span>
+            <div>
+              <h3 class="text-lg font-semibold text-[#1e1d1e]">
+                Consultanță pentru proiectul tău
+              </h3>
+              <p class="mt-1 text-sm leading-6 text-[#898a8a]">
+                Identificăm soluțiile potrivite nevoilor și spațiului tău.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+          <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#f6f6f6] text-[#628b6b]">
+            <i class="pi pi-hammer !text-[14px]"></i>
+          </span>
+            <div>
+              <h3 class="text-lg font-semibold text-[#1e1d1e]">
+                Măsurători și montaj
+              </h3>
+              <p class="mt-1 text-sm leading-6 text-[#898a8a]">
+                Atenție la dimensiuni, îmbinări și finisaje.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+          <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#f6f6f6] text-[#628b6b]">
+            <i class="pi pi-wrench !text-[14px]"></i>
+          </span>
+            <div>
+              <h3 class="text-lg font-semibold text-[#1e1d1e]">
+                Suport după instalare
+              </h3>
+              <p class="mt-1 text-sm leading-6 text-[#898a8a]">
+                Rămânem disponibili și după finalizarea lucrării.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <a
+          class="mt-10 inline-flex min-h-14 items-center justify-center gap-3 rounded-lg bg-[#2ea43a] px-7 py-4 text-base font-semibold !text-white transition-colors duration-200 hover:bg-[#16731f] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#16731f]"
+          routerLink="/contact"
+        >
+          Discută proiectul tău
+          <i class="pi pi-arrow-right text-lg"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
 </main>
