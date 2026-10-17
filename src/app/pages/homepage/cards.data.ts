@@ -1,4 +1,4 @@
-import {ISmallCard} from '../../shared/components/small-card/small-card.model';
+import { ISmallCard } from '../../shared/components/small-card/small-card.model';
 
 export const cards: ISmallCard[] = [
   {
@@ -6,7 +6,7 @@ export const cards: ISmallCard[] = [
     iconName: 'ri-microsoft-line ri-thin',
     header: 'Tâmplărie PVC & Aluminiu',
     mainParagraph: 'Profile moderne, coeficient de transfer termic redus, rezistență la intemperii și finisaje variate.',
-    smallFootnote: 'Sisteme 5-6 camere, sticlă termoizolantă, garnituri etanșe.'
+    smallFootnote: ''
   },
   {
     id: 2,
@@ -29,4 +29,4 @@ export const cards: ISmallCard[] = [
     mainParagraph: 'Plase fixe sau retractorabile, montaj rapid și eficient pentru ferestre și uși.',
     smallFootnote: ''
   }
-]
+];

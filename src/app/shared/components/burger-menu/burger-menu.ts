@@ -1,5 +1,6 @@
-import { Component, signal } from '@angular/core';
+import { Component, inject, WritableSignal } from '@angular/core';
 import { BurgerModal } from './burger-modal/burger-modal';
+import { BurgerService } from './burger-service';
 
 @Component({
   selector: 'app-burger-menu',
@@ -10,5 +11,6 @@ import { BurgerModal } from './burger-modal/burger-modal';
   styleUrl: './burger-menu.scss'
 })
 export class BurgerMenu {
-  burgerMenuClicked = signal<boolean>(false);
+  readonly #burgerService = inject(BurgerService);
+  burgerMenuClicked: WritableSignal<boolean> = this.#burgerService.burgerMenuClicked;
 }

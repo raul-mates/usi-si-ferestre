@@ -1,4 +1,4 @@
-<main class="homepage">
+<main (click)="deselectEventDelegation($event)" class="homepage">
   <section class="homepage__image-and-text-container">
     <div class="homepage__hero-container">
       <h1 class="homepage__hero-container__header">Usi si ferestre de calitate<br>superioara pentru casa ta</h1>
@@ -14,21 +14,21 @@
     </div>
   </section>
 
-  <section class="homepage__cards">
-    <div class="homepage__header-cards-container">
-      <h2 class="homepage__cards-header">Solutii complete pentru casa ta</h2>
-      <div class="homepage__cards-container">
-        @for (card of infoCards(); track card.id; let index = $index) {
-          <app-small-card (onSelectedCard)="onSelectedCard($event)"
-                          [cardId]="card.id"
-                          [header]="card.header"
-                          [iconName]="card.iconName"
-                          [mainParagraph]="card.mainParagraph"
-                          [selectedCard]="selectedCard()"
-                          [smallFootnote]="card.smallFootnote">
-          </app-small-card>
-        }
-      </div>
-    </div>
-  </section>
+  <!--  <section class="homepage__cards">-->
+  <!--    <div class="homepage__header-cards-container">-->
+  <!--      <h2 class="homepage__cards-header">Solutii complete pentru casa ta</h2>-->
+  <!--      <div class="homepage__cards-container">-->
+  <!--        @for (card of infoCards(); track card.id; let index = $index) {-->
+  <!--          <app-small-card (onSelectedCard)="onSelectedCard($event)"-->
+  <!--                          [cardId]="card.id"-->
+  <!--                          [header]="card.header"-->
+  <!--                          [iconName]="card.iconName"-->
+  <!--                          [mainParagraph]="card.mainParagraph"-->
+  <!--                          [selectedCard]="selectedCard()"-->
+  <!--                          [smallFootnote]="card.smallFootnote">-->
+  <!--          </app-small-card>-->
+  <!--        }-->
+  <!--      </div>-->
+  <!--    </div>-->
+  <!--  </section>-->
 </main>

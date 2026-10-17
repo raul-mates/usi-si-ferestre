@@ -1,3 +1,5 @@
+@use "tailwindcss";
+
 html {
   font-size: 62.5%;
 
@@ -47,4 +49,11 @@ a, ul {
   position: sticky;
   top: 0;
   z-index: 333;
+}
+
+.ro-gradient {
+  background: linear-gradient(90deg, #002B7F, #FCD116, #CE1126);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 500;
 }

@@ -1,5 +1,6 @@
-<app-burger-modal [burgerMenuClicked]="burgerMenuClicked()"></app-burger-modal>
+<app-burger-modal></app-burger-modal>
 <button (click)="burgerMenuClicked.set(!burgerMenuClicked())"
+        [class.opened]="burgerMenuClicked()"
         aria-label="Main Menu"
         class="menu"
         onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"

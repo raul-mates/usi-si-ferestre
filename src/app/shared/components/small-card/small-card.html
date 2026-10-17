@@ -1,10 +1,13 @@
-<div (click)="onCardClicked(cardId())"
-     [class.selected-card]="cardId() === selectedCard()"
-     class="card-container">
-  <div class="card-container__icon-container">
-    <i [class]="iconName()" style="font-weight: 0"></i>
+<a href="tel:+40757131273">
+  <div (click)="onCardClicked(cardId())"
+       [class.selected-card]="cardId() === selectedCard()"
+       class="card-container">
+    <div class="card-container__icon-container">
+      <i [class]="iconName()" style="font-weight: 0"></i>
+    </div>
+    <h4 class="card-container__header">{{ header() }}</h4>
+    <p class="card-container__main-paragraph">{{ mainParagraph() }}</p>
+    <p class="card-container__small-footnote">{{ smallFootnote() }}</p>
+    <p class="card-container__small-footnote click-footnote"></p>
   </div>
-  <h4 class="card-container__header">{{ header() }}</h4>
-  <p class="card-container__main-paragraph">{{ mainParagraph() }}</p>
-  <p class="card-container__small-footnote">{{ smallFootnote() }}</p>
-</div>
+</a>

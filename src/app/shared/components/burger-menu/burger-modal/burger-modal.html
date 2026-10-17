@@ -1,4 +1,4 @@
-<div [class.left]="burgerMenuClicked()" class="burger-menu">
+<div (click)="onLinkClicked($event)" [class.left]="burgerMenuClicked()" class="burger-menu">
   <a class="burger-link" routerLink="/homepage">Acasa</a>
   <a class="burger-link" routerLink="/about-us">Despre noi</a>
   <a class="burger-link" routerLink="/products">Produse</a>
