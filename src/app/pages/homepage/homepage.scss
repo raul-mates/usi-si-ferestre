@@ -1,0 +1,178 @@
+@use "../../../assets/styles/colors";
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__image-and-text-container {
+    justify-self: center;
+    width: 60%;
+    height: 55.1rem;
+    background-image: url("../../../../public/heroimage.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 2.4rem;
+
+    @media only screen and (max-width: 1440px) {
+      width: 80%;
+    }
+
+    @media only screen and (max-width: 1024px) {
+      width: 100%;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+  }
+
+  &__cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  &__header-cards-container {
+    width: 60%;
+
+    @media only screen and (max-width: 1440px) {
+      width: 80%;
+    }
+
+    @media only screen and (max-width: 1024px) {
+      width: 95%;
+    }
+
+    @media only screen and (max-width: 640px) {
+      width: 93%;
+    }
+  }
+
+  &__cards-header {
+    margin-bottom: 2rem;
+    color: colors.$secondary-header-color;
+
+    @media only screen and (max-width: 408px) {
+      white-space: wrap;
+    }
+  }
+
+  &__hero-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1.4rem 2rem;
+
+    & * {
+      width: fit-content;
+    }
+
+    &__header {
+      font-size: 3.2rem;
+    }
+
+    &__text {
+      width: 52.2rem !important;
+      white-space: wrap;
+      font-size: 1.6rem;
+      @media only screen and (max-width: 640px) {
+        width: 42.5rem !important;
+      }
+
+      @media only screen and (max-width: 451px) {
+        width: auto !important;
+      }
+    }
+
+
+    &__header {
+      margin-bottom: 1.5rem;
+      color: colors.$main-text-color;
+
+      @media only screen and (max-width: 461px) {
+        white-space: wrap;
+      }
+    }
+
+    &__links-container {
+      font-size: 1.6rem;
+      display: flex;
+      gap: 1rem;
+
+      &--link {
+        text-decoration: underline;
+      }
+
+      &--spacer {
+        cursor: default;
+      }
+    }
+
+    &__button {
+      font-family: 'Poppins', sans-serif;
+      cursor: pointer;
+      transition: all .2s ease-in-out;
+      font-weight: 400;
+      color: colors.$white;
+      background-color: colors.$button-green-primary-color;
+      border: none;
+      border-radius: 0.5rem;
+      padding: 1.6rem;
+      font-size: 1.6rem;
+      margin-bottom: 11rem;
+      margin-top: 1rem;
+
+      @media only screen and (max-width: 397px) {
+        margin-bottom: 5.5rem;
+      }
+
+      &:hover {
+        background-color: colors.$button-green-primary-color-darker;
+        margin-left: 0.3rem;
+      }
+    }
+  }
+
+  &__welcome {
+    width: 60%;
+
+    @media only screen and (max-width: 1440px) {
+      width: 80%;
+    }
+
+    @media only screen and (max-width: 1024px) {
+      width: 100%;
+    }
+
+    &-container {
+      border-radius: 0.5rem;
+      padding: 2.5rem 4rem;
+      line-height: 3.2rem;
+      background-color: colors.$homepage-text-container-color;
+      margin-bottom: 4rem;
+    }
+
+    &-text {
+      font-style: italic;
+      white-space: wrap;
+      font-weight: 300;
+      color: colors.$main-text-color;
+      font-size: 1.7rem;
+    }
+  }
+}
+
+.store-front-image {
+  background-size: cover;
+  width: 60%;
+  height: 60rem;
+  background-image: url("../../../../public/storefront.jpg");
+}

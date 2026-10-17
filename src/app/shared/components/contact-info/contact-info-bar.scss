@@ -1,0 +1,28 @@
+@use "../../../../assets/styles/colors";
+
+.contact-info-container {
+  display: flex;
+  background-color: colors.$primary-green-color;
+  color: colors.$white;
+  font-size: 1.4rem;
+  padding: 0.8rem;
+  gap: 1.5rem;
+
+  @media only screen and (max-width: 604px) {
+    &__email {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 366px) {
+    &__whatsapp {
+      display: none;
+    }
+  }
+
+  &__link {
+    cursor: pointer;
+    text-decoration: underline;
+    display: inline
+  }
+}

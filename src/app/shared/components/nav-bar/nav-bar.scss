@@ -1,0 +1,86 @@
+@use "../../../../assets/styles/colors";
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  background-color: colors.$white;
+  color: colors.$main-text-color;
+  height: 6.4rem;
+
+  @media only screen and (max-width: 646px) {
+    height: 4.2rem;
+    justify-content: flex-end;
+  }
+
+  &__company-name {
+    font-size: 1.6rem;
+  }
+
+  &__logo {
+    cursor: pointer;
+  }
+
+  &__wrapper {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 1440px) {
+      width: 80%;
+    }
+
+    @media only screen and (max-width: 1024px) {
+      width: 98%;
+    }
+
+    @media only screen and (max-width: 646px) {
+      display: none;
+    }
+  }
+
+  &__logo-and-name-container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__unordered-list-container {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+
+    &--link {
+      font-size: 1.6rem;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        width: 0;
+        bottom: 0;
+        height: 0.2rem;
+        transition: width 0.3s ease;
+        background-color: #815d2e;
+        border-radius: 0.5rem;
+      }
+
+      &:hover::after {
+        left: 0;
+        width: 100%;
+      }
+    }
+  }
+
+  &__burger {
+    display: none;
+    @media only screen and (max-width: 646px) {
+      display: block;
+    }
+  }
+}
+
+.selected-page {
+  transition: color .2s ease-in-out;
+  color: #cba26e;
+}

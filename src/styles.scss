@@ -1,1 +1,59 @@
-/* You can add global styles to this file, and also import other style files */
+@use "tailwindcss";
+
+html {
+  font-size: 62.5%;
+
+  @media only screen and (max-width: 1024px) {
+    font-size: 56.25%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background-color: #f6f6f6;
+  font-family: 'Poppins', sans-serif;
+  color: #898a8a;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  cursor: default;
+  margin: 0;
+  white-space: nowrap;
+}
+
+a, ul {
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
+  white-space: nowrap;
+}
+
+.spacer {
+  height: 0.8rem;
+  background: linear-gradient(to right,
+    #9d6e23 0%,
+    #f3e099 50%,
+    #9d6e23 100%
+  );
+}
+
+.link {
+  text-decoration: underline;
+}
+
+
+.sticky-nav-bar {
+  position: sticky;
+  top: 0;
+  z-index: 333;
+}
+
+.ro-gradient {
+  background: linear-gradient(90deg, #002B7F, #FCD116, #CE1126);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 500;
+}

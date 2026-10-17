@@ -1,0 +1,106 @@
+@use "../../../../assets/styles/colors";
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: colors.$primary-green-color;
+  color: colors.$white;
+
+  &__sections-wrapper {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media only screen and (max-width: 1570px) {
+      width: 80%;
+    }
+
+    @media only screen and (max-width: 1172px) {
+      width: 93%;
+    }
+
+    @media only screen and (max-width: 1009px) {
+      justify-content: center;
+    }
+  }
+
+  &__left-container {
+    padding: 2.5rem 0 1.5rem 0;
+
+    &__company-name {
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+
+    &__company-info {
+      display: flex;
+      color: colors.$white;
+      align-items: center;
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    &__unordered-list {
+      font-weight: 400;
+      font-size: 1.3rem;
+      padding-left: 5.9rem;
+
+      & li {
+        display: flex;
+        padding-bottom: 1.5rem;
+        gap: 0.5rem;
+
+        & a {
+          white-space: wrap;
+        }
+      }
+    }
+  }
+
+  &__right-container {
+    padding: 2.5rem 0 4rem 5.9rem;
+
+    &__unordered-list {
+      padding: 0;
+      margin-top: 0.3rem;
+    }
+
+    &__list-item {
+      margin-bottom: 1rem;
+    }
+
+    &__copyright-developer {
+      font-size: 1.3rem;
+
+      & p {
+        display: block;
+        white-space: wrap;
+      }
+    }
+  }
+}
+
+.footer-link {
+  position: relative;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: colors.$primary-orange-color;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 0;
+    bottom: 0;
+    height: 0.2rem;
+    transition: width 0.3s ease;
+    background-color: colors.$link-hover-color;
+    border-radius: 0.5rem;
+  }
+
+  &:hover::after {
+    left: 0;
+    width: 100%;
+  }
+}

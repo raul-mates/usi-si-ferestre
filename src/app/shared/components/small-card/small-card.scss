@@ -1,0 +1,66 @@
+@use "../../../../assets/styles/colors";
+
+.card-container {
+  padding: 1rem 1rem 2.5rem 1rem;
+  border: 0.2rem solid colors.$card-color-border;
+  border-radius: 1rem;
+  width: 25rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+
+  @media only screen and (max-width: 370px) {
+    width: auto;
+  }
+
+  &__icon-container {
+    width: 100%;
+    text-align: center;
+    font-size: 6.4rem;
+    color: colors.$cards-icon-color;
+  }
+
+  &__header {
+    font-size: 1.8rem;
+    color: colors.$secondary-header-color;
+  }
+
+  &__main-paragraph {
+    font-size: 1.6rem;
+  }
+
+  &__small-footnote {
+    font-size: 1.3rem;
+  }
+
+  &, &__header, &__main-paragraph, &__small-footnote {
+    cursor: pointer;
+    white-space: wrap;
+  }
+}
+
+.selected-card {
+  transition: all .2s ease-in-out;
+  border: 0.2rem solid colors.$card-selected-color-border;
+}
+
+.ri-thin {
+  -webkit-text-stroke: 0.05rem colors.$cards-icon-color;
+  color: transparent;
+}
+
+.click-footnote {
+  //text-align: center;
+}
+
+.click-footnote:before {
+  text-align: center;
+  width: 100%;
+  content: 'Click pentru a afla mai multe!';
+
+  @media only screen and (max-width: 1024px) {
+    content: 'Apasa pentru a afla mai multe!'
+  }
+}
